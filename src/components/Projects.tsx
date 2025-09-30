@@ -96,7 +96,7 @@ export const Projects = () => {
 
         <div className="text-center mt-12 animate-fade-in-up">
           <Button variant="glass" size="lg" asChild>
-            <a href="https://github.com/alimmedlamine" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/alimlamine" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4" />
               View More on GitHub
             </a>
