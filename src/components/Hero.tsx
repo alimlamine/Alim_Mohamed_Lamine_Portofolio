@@ -31,7 +31,7 @@ export const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              <span className="block">Alim Momahed</span>
+              <span className="block">Alim Mohamed</span>
               <span className="block text-gradient">Lamine</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
