@@ -41,7 +41,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="py-16 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
