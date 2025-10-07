@@ -8,7 +8,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20">
       <div className="container mx-auto max-w-6xl z-10">
         <div className="text-center space-y-8 animate-fade-in-up">
           {/* Badge */}
