@@ -39,33 +39,33 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 px-4 relative">
+    <section id="experience" className="py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Professional <span className="text-gradient">Experience</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             Hands-on expertise in AI development and full-stack engineering
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="glass-effect p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 animate-slide-in-right"
+              className="glass-effect p-6 sm:p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 animate-slide-in-right"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start gap-6">
-                <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
-                  <experience.icon className="w-8 h-8 text-primary" />
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                <div className="p-3 sm:p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 flex-shrink-0">
+                  <experience.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
                 
-                <div className="flex-1">
+                <div className="flex-1 w-full">
                   <div className="mb-4">
-                    <h3 className="text-2xl font-bold mb-2">{experience.title}</h3>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2">{experience.title}</h3>
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
                       <span className="px-3 py-1 rounded-full bg-primary/10 text-primary">
                         {experience.type}
                       </span>
@@ -80,7 +80,7 @@ export const Experience = () => {
 
                   <ul className="space-y-3">
                     {experience.items.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-muted-foreground">
+                      <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-muted-foreground">
                         <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                         <span>{item}</span>
                       </li>

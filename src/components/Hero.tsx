@@ -8,9 +8,9 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-20">
       <div className="container mx-auto max-w-6xl z-10">
-        <div className="text-center space-y-8 animate-fade-in-up">
+        <div className="text-center space-y-6 sm:space-y-8 animate-fade-in-up">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect text-sm">
             <div className="w-2 h-2 rounded-full bg-accent animate-glow-pulse" />
@@ -29,18 +29,18 @@ export const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              <span className="block">Alim Mohamed</span>
+          <div className="space-y-3 sm:space-y-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              <span className="block">Alim Momahed</span>
               <span className="block text-gradient">Lamine</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
               AI Engineer & Full-Stack Developer
             </p>
           </div>
 
           {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             Specializing in Machine Learning, Deep Learning, and Full-Stack Web Development. 
             Transforming complex problems into elegant solutions with cutting-edge technology.
           </p>
@@ -100,8 +100,8 @@ export const Hero = () => {
       </div>
 
       {/* Gradient Orbs */}
-      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/4 -left-24 sm:-left-48 w-64 h-64 sm:w-96 sm:h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 -right-24 sm:-right-48 w-64 h-64 sm:w-96 sm:h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
     </section>
   );
 };

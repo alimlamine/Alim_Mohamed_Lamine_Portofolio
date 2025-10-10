@@ -32,31 +32,31 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 px-4 relative">
+    <section id="about" className="py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             Passionate about leveraging AI and technology to solve real-world problems
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
           <div className="space-y-6 animate-slide-in-left">
-            <div className="glass-effect p-8 rounded-2xl space-y-4">
-              <h3 className="text-2xl font-bold">My Journey</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="glass-effect p-6 sm:p-8 rounded-2xl space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold">My Journey</h3>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Based in Annaba, Algeria, I'm a dedicated AI Engineer and Full-Stack Developer 
                 with a strong foundation in machine learning, deep learning, and modern web technologies.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 My expertise spans from building sophisticated neural networks with TensorFlow and 
                 PyTorch to crafting seamless web experiences with React and Laravel. I thrive on 
                 transforming complex challenges into elegant, scalable solutions.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Currently pursuing opportunities to contribute to innovative projects that push 
                 the boundaries of what's possible with AI and software development.
               </p>
@@ -67,15 +67,15 @@ export const About = () => {
             {highlights.map((highlight, index) => (
               <div 
                 key={index}
-                className="glass-effect p-6 rounded-2xl hover:bg-card/60 transition-all duration-300 hover:scale-105"
+                className="glass-effect p-4 sm:p-6 rounded-2xl hover:bg-card/60 transition-all duration-300 hover:scale-105"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <highlight.icon className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                    <highlight.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-lg mb-3">{highlight.title}</h4>
+                    <h4 className="font-bold text-base sm:text-lg mb-3">{highlight.title}</h4>
                     <ul className="space-y-2">
                       {highlight.items.map((item, idx) => (
                         <li key={idx} className="text-muted-foreground text-sm flex items-center gap-2">

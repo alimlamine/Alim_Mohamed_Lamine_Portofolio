@@ -29,29 +29,29 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 px-4 relative">
+    <section id="skills" className="py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Technical <span className="text-gradient">Skills</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             A comprehensive toolkit for building intelligent, scalable solutions
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="glass-effect p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 group animate-scale-in"
+              className="glass-effect p-6 sm:p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 group animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`p-3 rounded-xl bg-gradient-to-r ${category.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  <category.icon className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-3 sm:gap-4 mb-6">
+                <div className={`p-2 sm:p-3 rounded-xl bg-gradient-to-r ${category.color} shadow-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                  <category.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">{category.title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold">{category.title}</h3>
               </div>
 
               <div className="flex flex-wrap gap-2">
@@ -69,8 +69,8 @@ export const Skills = () => {
         </div>
 
         {/* Soft Skills */}
-        <div className="mt-12 glass-effect p-8 rounded-2xl animate-fade-in-up">
-          <h3 className="text-xl font-bold mb-6 text-center">Core Competencies</h3>
+        <div className="mt-8 sm:mt-12 glass-effect p-6 sm:p-8 rounded-2xl animate-fade-in-up">
+          <h3 className="text-lg sm:text-xl font-bold mb-6 text-center">Core Competencies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "Team Collaboration",

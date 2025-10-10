@@ -39,39 +39,39 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-16 px-4 relative">
+    <section id="contact" className="py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Let's <span className="text-gradient">Connect</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             I'm always open to discussing new projects, opportunities, or collaborations
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12">
           {/* Contact Info */}
           <div className="space-y-6 animate-slide-in-left">
-            <div className="glass-effect p-8 rounded-2xl space-y-6">
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+            <div className="glass-effect p-6 sm:p-8 rounded-2xl space-y-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6">Get in Touch</h3>
               
               {contactInfo.map((contact, index) => (
-                <div key={index} className="flex items-center gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <contact.icon className="w-5 h-5 text-primary" />
+                <div key={index} className="flex items-center gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0">
+                    <contact.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">{contact.label}</p>
+                  <div className="min-w-0">
+                    <p className="text-xs sm:text-sm text-muted-foreground">{contact.label}</p>
                     {contact.href ? (
                       <a
                         href={contact.href}
-                        className="font-medium hover:text-primary transition-colors duration-300"
+                        className="text-sm sm:text-base font-medium hover:text-primary transition-colors duration-300 break-all"
                       >
                         {contact.value}
                       </a>
                     ) : (
-                      <p className="font-medium">{contact.value}</p>
+                      <p className="text-sm sm:text-base font-medium break-words">{contact.value}</p>
                     )}
                   </div>
                 </div>
@@ -79,8 +79,8 @@ export const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="glass-effect p-8 rounded-2xl">
-              <h3 className="text-xl font-bold mb-6">Connect Online</h3>
+            <div className="glass-effect p-6 sm:p-8 rounded-2xl">
+              <h3 className="text-lg sm:text-xl font-bold mb-6">Connect Online</h3>
               <div className="space-y-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -104,10 +104,10 @@ export const Contact = () => {
 
           {/* CTA Section */}
           <div className="space-y-6 animate-slide-in-right">
-            <div className="glass-effect p-8 rounded-2xl h-full flex flex-col justify-between">
+            <div className="glass-effect p-6 sm:p-8 rounded-2xl h-full flex flex-col justify-between">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">Ready to Work Together?</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold">Ready to Work Together?</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   I'm currently seeking opportunities in AI engineering, machine learning, 
                   and full-stack development. Whether you have a project in mind or just 
                   want to connect, I'd love to hear from you.

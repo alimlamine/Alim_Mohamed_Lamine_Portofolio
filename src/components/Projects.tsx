@@ -41,41 +41,41 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 px-4 relative">
+    <section id="projects" className="py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto px-4">
             Innovative solutions at the intersection of AI and software engineering
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass-effect p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 group animate-scale-in relative overflow-hidden"
+              className="glass-effect p-6 sm:p-8 rounded-2xl hover:bg-card/60 transition-all duration-300 group animate-scale-in relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient Background */}
-              <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${project.gradient} opacity-10 blur-3xl group-hover:opacity-20 transition-opacity duration-300`} />
+              <div className={`absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br ${project.gradient} opacity-10 blur-3xl group-hover:opacity-20 transition-opacity duration-300`} />
               
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
+                  <div className="flex-1 pr-2">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <span className="text-sm text-muted-foreground">{project.year}</span>
+                    <span className="text-xs sm:text-sm text-muted-foreground">{project.year}</span>
                   </div>
-                  <div className={`p-2 rounded-lg bg-gradient-to-r ${project.gradient} opacity-80`}>
+                  <div className={`p-2 rounded-lg bg-gradient-to-r ${project.gradient} opacity-80 flex-shrink-0`}>
                     <ExternalLink className="w-4 h-4 text-white" />
                   </div>
                 </div>
 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -96,7 +96,7 @@ export const Projects = () => {
 
         <div className="text-center mt-12 animate-fade-in-up">
           <Button variant="glass" size="lg" asChild>
-            <a href="https://github.com/alimlamine" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/alimmedlamine" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4" />
               View More on GitHub
             </a>
